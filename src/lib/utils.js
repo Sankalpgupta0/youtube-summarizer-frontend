@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export async function getTranscript(videoUrl) {
-    const response = await axios.get(`http://127.0.0.1:8000/api/?youtube_video_url=${videoUrl}`);
+    const response = await axios.get(`http://192.168.0.109:8000/api/?youtube_video_url=${videoUrl}`);
     console.log(response.data);
     return response.data;
 };
